@@ -1,0 +1,18 @@
+-- Criar tabela de alunos
+CREATE TABLE alunos (
+  id INT PRIMARY KEY,
+  nome VARCHAR(50),
+  idade INT
+);
+
+-- Inserir dados
+INSERT INTO alunos (id, nome, idade) VALUES (1, 'Davi', 17);
+
+-- Ver dados
+SELECT * FROM alunos;
+
+-- Atualizar idade
+UPDATE alunos SET idade = 18 WHERE nome = 'Davi';
+
+-- Deletar aluno
+DELETE FROM alunos WHERE id = 1;
